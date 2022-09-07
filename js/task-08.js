@@ -8,7 +8,8 @@ function onFormSubmit(event) {
   const { email, password } =
     event.currentTarget.elements;
   if (!email.value.trim() || !password.value.trim()) {
-    alert('Warning! All fills must be complane');
+   return alert('Warning! All fills must be complane');
+    
   }
   const userForm = {
     email: email.value.trim(),
