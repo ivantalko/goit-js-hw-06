@@ -12,10 +12,12 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+// перебираем масив картинок и при помощи деструктаризации выводим ключи .
 const list = images.map(({ url, alt })=> {
   return `<li> <img src ="${url}" alt="${alt}" width="300" height="200"> </li>`;
-
+// возвращаем созданную li в которую вкладываем картинки с ключами из масива.
 });
+// находим класс галлерея и добавляем ему за один раз все картинки и разделяем масив построчно.
 document
   .querySelector(".gallery")
   .insertAdjacentHTML("beforeend", list.join(""));
