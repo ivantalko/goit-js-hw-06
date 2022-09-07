@@ -13,7 +13,7 @@ const images = [
   },
 ];
 const list = images.map(({ url, alt })=> {
-  return `<li> <img src ="${url}" alt="${alt}" width="300"> </li>`;
+  return `<li> <img src ="${url}" alt="${alt}" width="300" height="200"> </li>`;
 
 });
 document
