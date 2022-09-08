@@ -13,7 +13,7 @@ inputEl.addEventListener(
 );
 // добавляем функцию с параметром события.Делаем проверку-если длина значения введёного события строго равна количеству введённых символов .то вызываем фунцию со значениями.
 function onInputValid(event) {
-  if (event.target.value.length === validLength) {
+  if (event.target.value.trim().length === validLength) {
     updateClassElem('valid', 'invalid');
   } else {
     updateClassElem('invalid', 'valid');
